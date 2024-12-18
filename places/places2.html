@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place 1 - Destination Details</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Place 1 Details Section -->
+    <section id="place1" class="section">
+        <h2>Murudeshwar</h2>
+
+        <!-- Image Slider -->
+        <div class="slider">
+            <div class="slides">
+                <img src="../images/murudeshwar/img1.jpg" alt="Place 1 Image 1">
+                <img src="../images/murudeshwar/img2.jpg" alt="Place 1 Image 2">
+                <img src="../images/murudeshwar/img3.jpg" alt="Place 1 Image 3">
+                <img src="../images/murudeshwar/img4.jpg" alt="Place 1 Image 4">
+                <img src="../images/murudeshwar/img5.jpg" alt="Place 1 Image 5">
+                <img src="../images/murudeshwar/img6.jpg" alt="Place 1 Image 6">
+                <img src="../images/murudeshwar/img7.jpg" alt="Place 1 Image 7">
+            </div>
+        </div>
+
+        <!-- Place Description -->
+        <div class="place-description">
+            <h3>About the Place</h3>
+            <p>Place 1 is a beautiful location known for its scenic views and cultural significance. It's a must-visit for anyone looking to experience nature at its finest. Whether you are trekking through its forests or relaxing by the beach, Place 1 has something for everyone.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>Mountain treks</li>
+                <li>Waterfalls</li>
+                <li>Beautiful beaches</li>
+                <li>Local cuisine and culture</li>
+            </ul>
+            <p>We had an amazing time at Place 1. You can also explore local attractions like [Local Attraction 1], [Local Attraction 2], and more!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Our Trip. Designed with ❤️ by [Your Team].</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        // Function to show the slides
+        function showSlides() {
+            const slides = document.querySelectorAll('.slider .slides img');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides(); // Start the slide show
+    </script>
+</body>
+</html>
